@@ -223,7 +223,7 @@ body {
 /* Desktop (1025px to 1440px) */
 @media (min-width: 1025px) and (max-width: 1440px) {
     .welcome-message {
-      width: 15%; /* Adjust as needed for tablet */
+      width: 25%; /* Adjust as needed for tablet */
     }
 }
 
