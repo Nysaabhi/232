@@ -216,21 +216,7 @@ body {
 /* Tablet (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
     .welcome-message {
-        width: 50%; /* Adjust as needed for tablet */
-    }
-}
-
-/* Desktop (1025px and up) */
-@media (min-width: 1025px) {
-    .welcome-message {
-        width: 15%; /* Perfect desktop width */
-    }
-}
-
-/* Large desktop screens (1440px and up) */
-@media (min-width: 1440px) {
-    .welcome-message {
-        width: 15%; /* Perfect for wide screens */
+        width: 30%; /* Adjust as needed for tablet */
     }
 }
 
