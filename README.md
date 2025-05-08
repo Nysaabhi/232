@@ -222,7 +222,7 @@ body {
 /* Large desktop screens (1440px and up) */
 @media (min-width: 1440px) {
     .welcome-message {
-        width: 30%; /* Perfect for wide screens */
+        width: 20%; /* Perfect for wide screens */
     }
 }
 
