@@ -121,13 +121,12 @@ body {
 
 .message {
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    gap: 10px;
-    margin-bottom: 16px;
-    animation: messageSlide 0.3s ease-out;
-    width: 100%;
-    max-width: 100%;
-}
+    display: flex; 
+    gap: 10px; 
+    max-width: 100%; 
+    margin-bottom: 16px; 
+    animation: messageSlide 0.3s ease-out; 
+    }
 
 /* Bot message styles */
 .bot-message {
@@ -170,8 +169,7 @@ body {
     align-items: flex-start;
     gap: 12px;
     margin-bottom: 16px;
-    width: 20%;
-    max-width: 100%;
+    width: 100%;
 }
 
 .welcome-avatar {
@@ -212,6 +210,19 @@ body {
 @media (max-width: 768px) {
     .welcome-message {
         width: 80%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .welcome-message {
+        width: 20%; /* Perfect desktop width */
+    }
+}
+
+/* Large desktop screens (1440px and up) */
+@media (min-width: 1440px) {
+    .welcome-message {
+        width: 15%; /* Perfect for wide screens */
     }
 }
 
@@ -7262,74 +7273,19 @@ style.textContent = `
         justify-content: center;
     }
 
+    .welcome-message ul {
+        margin: 10px 0;
+        padding-left:20px;
+    }
 
-      .welcome-message {
-        max-width: 85%;
-        width: fit-content;
-        margin: 0; /* Remove auto margin to keep left-aligned */
-        padding: 16px;
-        border-radius: 18px 18px 18px 4px; /* More pronounced left-side curve */
-        background: #1a1a1f;
-        box-sizing: border-box;
-        align-self: flex-start; /* Force left alignment */
-      }
-      
-      .welcome-avatar {
-        width: 36px;
-        height: 36px;
-        background: #2563eb;
-        color: white;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-      }
-      
-      .welcome-content {
-        margin-left: 0px;
-      }
-      
-      .welcome-content p {
-        margin: 0;
-        font-size: 16px;
-        color: white;
-        line-height: 1.4;
-      }
-      
-      /* Mobile devices */
-      @media (max-width: 480px) {
-        .welcome-message {
-          padding: 14px;
-          border-radius: 16px 16px 16px 4px;
-          max-width: 80%; /* Slightly less than 85% for mobile */
-        }
-        
-        .welcome-avatar {
-          width: 32px;
-          height: 32px;
-          font-size: 14px;
-        }
-        
-        .welcome-content p {
-          font-size: 15px;
-        }
-      }
-      
-      /* Tablets */
-      @media (min-width: 768px) {
-        .welcome-message {
-          max-width: 75%; /* Slightly wider than mobile */
-        }
-      }
-      
-      /* Desktop */
-      @media (min-width: 1024px) {
-        .welcome-message {
-          max-width: 65%; /* Optimal width for desktop */
-        }
-      }
+    .fade-out {
+  animation: fadeOut 0.3s ease-out forwards;
+    }
 
+   @keyframes fadeOut {
+   from { opacity: 1; }
+   to { opacity: 0; transform: translateY(-20px); }
+   }
 
     .menu-close-button {
         position: absolute;
