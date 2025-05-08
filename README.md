@@ -222,7 +222,7 @@ body {
 /* Large desktop screens (1440px and up) */
 @media (min-width: 1440px) {
     .welcome-message {
-        width: 15%; /* Perfect for wide screens */
+        width: 30%; /* Perfect for wide screens */
     }
 }
 
@@ -7243,49 +7243,6 @@ style.textContent = `
       0%, 80%, 100% { transform: scale(0); }
       40% { transform: scale(1); }
   }
-
-    .message {
-    display: flex; 
-    gap: 10px; 
-    max-width: 100%; 
-    margin-bottom: 16px; 
-    animation: messageSlide 0.3s ease-out; 
-    }
-
-    .bot-message { 
-  align-self: flex-start; 
-}
-   
-   .user-message {
-        background: #lalala;
-        color: white;
-        margin-left: auto;
-    }
-
-    .message-avatar {
-        width: 30px;
-        height: 30px;
-        background: #lalala;
-        color: #FFD700;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .welcome-message ul {
-        margin: 10px 0;
-        padding-left:20px;
-    }
-
-    .fade-out {
-  animation: fadeOut 0.3s ease-out forwards;
-    }
-
-   @keyframes fadeOut {
-   from { opacity: 1; }
-   to { opacity: 0; transform: translateY(-20px); }
-   }
 
     .menu-close-button {
         position: absolute;
