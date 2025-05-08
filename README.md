@@ -230,7 +230,7 @@ body {
 /* Large Desktop / Laptop (1441px and above) */
 @media (min-width: 1441px) {
     .welcome-message {
-      width: 15%; /* Adjust as needed for tablet */
+      width: 25%; /* Adjust as needed for tablet */
     }
 }
 
