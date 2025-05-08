@@ -223,14 +223,14 @@ body {
 /* Desktop (1025px to 1440px) */
 @media (min-width: 1025px) and (max-width: 1440px) {
     .welcome-message {
-        width: 300px; /* Adjust as needed */
+      width: 15%; /* Adjust as needed for tablet */
     }
 }
 
 /* Large Desktop / Laptop (1441px and above) */
 @media (min-width: 1441px) {
     .welcome-message {
-        width: 300px; /* Adjust as needed */
+      width: 15%; /* Adjust as needed for tablet */
     }
 }
 
